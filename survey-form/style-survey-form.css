@@ -94,3 +94,18 @@ option {
     background: rgb(16,25,21, 0.9);
     outline: none;
 }
+
+@media (max-width: 640px){
+  
+  header {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 100%;
+  } 
+  
+  div {
+    padding: 0;
+  }
+}
