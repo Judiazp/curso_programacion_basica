@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: arial 24px;
+  background-color: #EEEEEE;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  position: fixed;
+  background: #EEEEEE;
+  min-height: 75px;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  margin-right: 60px;
+  
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.started {
+  text-align: center;
+  padding-top: 130px;
+}
+
+.started__form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 300px;
+}
+
+.started__form-email {
+  padding: 5px;
+  width: 250px;
+  margin: auto;
+}
+
+.started__form-button {
+  max-width: 150px;
+  margin: auto;
+  margin-top: 15px;
+  padding: 4px 15px;
+  background-color: yellow;
+  border: none;
+}
+
+.started__form-button:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+.features__container {
+  padding: 50px;
+  max-width: 70%;
+  margin: auto;
+}
+
+.features-item {
+ display: flex;
+ align-items: center;
+}
+
+.features-item__img {
+  padding: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.video__container {
+  display: flex;
+  justify-content: center;
+}
+
+.product__container {
+  display: flex;
+  padding: 40px; 
+  width: 80%;
+  margin: auto;
+}
+
+.product-prices {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  margin: 10px;
+  line-height: 2;
+  align-items: center;
+}
+
+.product-prices__title {
+  background: #DDDDDD;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.product-prices__money {
+  padding: 15px 0 0;
+  margin: 0;
+}
+
+.product-prices__details {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+.product-prices__button {
+  padding: 15px;
+  background-color: yellow;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 30%;
+}
+
+.product-prices__button:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    
+  header{
+  flex-direction: column;
+  text-align: center;
+  }
+  
+  .features-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .started__form {
+    padding-bottom: 30px;
+  }
+  
+  .features__container {
+    max-width: 100%;
+    padding: 0;
+  }
+   
+  .features-item__img {
+    padding: 10px;
+  }
+
+  .product__container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  
+  ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .video__container {
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .product__container {
+    width: 95%;
+  }
+    .features__container {
+   max-width: 100%
+  }
+}
